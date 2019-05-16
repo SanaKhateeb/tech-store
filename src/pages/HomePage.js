@@ -1,9 +1,10 @@
 import React from 'react'
+import {ProductConsumer} from '../context';
 
 export default function HomePage() {
   return (
-    <React.Fragment>
-      <h1>Hello from Home Page</h1>
-    </React.Fragment>
+    <ProductConsumer>
+      {value => <h1>{value}</h1>}
+    </ProductConsumer>
   )
 }
