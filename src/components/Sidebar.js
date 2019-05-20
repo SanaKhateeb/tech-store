@@ -9,7 +9,7 @@ export default function Sidebar() {
       {value => {
         const {links, sidebarOpen, handleSidebar} = value;
         return (
-          <SideWrapper>
+          <SideWrapper show={sidebarOpen}>
             <ul>
               {links.map(link => {
                 return (
@@ -27,4 +27,36 @@ export default function Sidebar() {
 }
 
 const SideWrapper = styled.nav`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--mainGrey);
+  z-index: 1;
+  border-right: 4px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  transform: ${props => props.show ? 'translateX(0)' : 'translateX(-100%)'};
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar-link {
+    display: block;
+    color: var(--mainBlack);
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    transition: var(--mainTransition);
+  }
+
+  .sidebar-link:hover {
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    padding: 0.5rem 1.5rem .5rem 2.5rem;
+    text-decoration: none;
+  }
+
+  @media (min-width: 576px) {
+    width: 20rem;
+  }
 `
