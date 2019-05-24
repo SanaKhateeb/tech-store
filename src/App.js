@@ -19,7 +19,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        {/* navbar, sidebar, cart, footer */}
         <Navbar />
         <Sidebar />
         <Sidecart />

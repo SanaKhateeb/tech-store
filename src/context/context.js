@@ -47,7 +47,7 @@ class ProductProvider extends Component {
           openCart: this.openCart,
         }}
       >
-            {this.props.children}
+        {this.props.children}
       </ProductContext.Provider>
     );
   }
