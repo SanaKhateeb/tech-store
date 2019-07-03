@@ -8,10 +8,10 @@ export default class Contact extends Component {
         <div className="row">
           <div className="col-10 mx-auto col-md-6 my-3">
             <Title title="Contact Us" />
-            <form className="mt-5">
+            <form className="mt-5" action="https://formspree.io/sana.khateeb@slalom.com" method="POST">
               {/* first name */}
               <div className="form-group">
-                <input type="text" name="firstName" placeholder="First Last" className="form-control"/>
+                <input type="text" name="name" placeholder="First Last" className="form-control"/>
               </div>    
 
               {/* email */}
@@ -29,6 +29,10 @@ export default class Contact extends Component {
                 <textarea name="message" rows="10" className="form-control" placeholder="Hello, I really want this item added to the store. Gimme." />
               </div>
 
+              {/* submit */}
+              <div className="form-group mt-3">
+                <input type="submit" value="Send" className="form-control bg-primary text-white"/>
+              </div>
             </form>
           </div>
         </div>
