@@ -9,19 +9,19 @@ export default class Services extends Component {
         id: 1,
         icon: <FaDolly />,
         title: 'Free Shipping',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, animi.',
+        text: `We'll ship anything from a bandaid to a time machine to your door for FREE`,
       },
       {
         id: 2,
         icon: <FaRedo />,
         title: '30 Day Return Policy',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, animi.',
+        text: `For those times you accidentally order a $10000 hot tub from Alexa`,
       },
       {
         id: 3,
         icon: <FaDollarSign />,
         title: 'Secured Payment',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, animi.',
+        text: `You know we're secure and won't take your info because it's not real!!`,
       },
     ]
   }
