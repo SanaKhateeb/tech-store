@@ -14,7 +14,7 @@ export default function Product({product}) {
           <ProductWrapper className="col-10 mx-auto col-sm-8 col-md-6 col-lg-4 my-3">
             <div className="card">
               <div className="img-container">
-                <img src={product.image} className="card-img-top p-5"  alt="product" style={{height: "37vh"}}/>
+                <img src={product.image} className="card-img-top p-5"  alt="product" style={{height: "35vh"}}/>
                 <div className="product-icon">
                   <Link to={`/products/${product.id}`} onClick={() => setSingleProduct(product.id)}>
                     <FaSearch className="icon" />
@@ -42,6 +42,7 @@ const ProductWrapper = styled.div`
   .card {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.28);
     transition: var(--mainTransition);
+    height: 100%
   }
 
   .card:hover {
