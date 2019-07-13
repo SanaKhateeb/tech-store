@@ -13,8 +13,8 @@ export default function Info() {
 
           <div className="col-10 mx-auto col-md-6 my-3">
             <Title title="About Us" />
-            <p className="text-lead text-muted my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias natus tempora ratione possimus nam praesentium, consequuntur neque modi ducimus?</p>
-            <p className="text-lead text-muted my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias natus tempora ratione possimus nam praesentium, consequuntur neque modi ducimus?</p>
+            <p className="text-lead text-muted my-3">This is a totally real store offering totally real products at UNREAL prices!!!</p>
+            <p className="text-lead text-muted my-3">Feel free to have a look around, and send me some emails in the Contact page.</p>
             <button className="main-link" type="button" style={{marginTop: "2rem"}}>
               More Info
             </button>
