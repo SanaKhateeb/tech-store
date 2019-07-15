@@ -44,6 +44,8 @@ class ProductProvider extends Component {
       featuredProducts,
       cart: this.getStorageCart(),
       singleProduct: this.getStorageProduct(),
+    }, () => {
+      this.addTotals();
     })
   }
 
@@ -55,9 +57,38 @@ class ProductProvider extends Component {
     return [];
   }
 
-  getTotals = () => {};
+  getTotals = () => {
+    let subTotal = 0;
+    let cartItems = 0;
+    this.state.cart.forEach(item => {
+      subTotal += item.itemTotal;
+      cartItems += item.count;
+    })
 
-  addTotals = () => {};
+    subTotal = parseFloat(subTotal.toFixed(2));
+    let tax = subTotal * 0.08;
+    tax = parseFloat(tax.toFixed(2));
+    let total = subTotal + tax;
+    total = parseFloat(total.toFixed(2));
+
+    return {
+      cartItems,
+      subTotal,
+      tax,
+      total
+    };
+  };
+
+  addTotals = () => {
+    const totals = this.getTotals();
+    
+    this.setState({
+      cartItems: totals.cartItems,
+      cartSubTotal: totals.subTotal,
+      cartTax: totals.tax,
+      cartTotal: totals.total,
+    })
+  };
 
   syncStorage = () => {};
 
