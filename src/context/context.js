@@ -20,7 +20,7 @@ class ProductProvider extends Component {
     filteredProducts: [],
     featuredProducts: [],
     singleProduct: {},
-    loading: true,
+    loading: false,
   }
 
   componentDidMount() {
