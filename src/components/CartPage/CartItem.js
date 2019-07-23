@@ -27,12 +27,13 @@ export default function CartItem({cartItem, increment, decrement, removeItem}) {
           </div>
         </div>
       </div>
+      {/* End of Item Controls */}
 
       <div className="col-10 mx-auto col-lg-2">
         <FaTrash className="text-danger cart-icon" onClick={() => removeItem(id)} /> 
       </div>
 
-      <div className="col-10 mx-auto col-lg-2 ">
+      <div className="col-10 mx-auto col-lg-2 mt-2 mt-lg-0">
         <strong className="d-lg-none text-muted">Item Subtotal: </strong>${itemTotal}
       </div>
     </div>
