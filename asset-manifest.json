@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/tech-store/static/css/main.f9a381da.chunk.css",
-    "main.js": "/tech-store/static/js/main.c2657c9c.chunk.js",
-    "main.js.map": "/tech-store/static/js/main.c2657c9c.chunk.js.map",
+    "main.css": "/tech-store/static/css/main.f94eec75.chunk.css",
+    "main.js": "/tech-store/static/js/main.894876db.chunk.js",
+    "main.js.map": "/tech-store/static/js/main.894876db.chunk.js.map",
     "runtime~main.js": "/tech-store/static/js/runtime~main.7dc53529.js",
     "runtime~main.js.map": "/tech-store/static/js/runtime~main.7dc53529.js.map",
     "static/css/2.1e66eaca.chunk.css": "/tech-store/static/css/2.1e66eaca.chunk.css",
-    "static/js/2.10bd1ec9.chunk.js": "/tech-store/static/js/2.10bd1ec9.chunk.js",
-    "static/js/2.10bd1ec9.chunk.js.map": "/tech-store/static/js/2.10bd1ec9.chunk.js.map",
+    "static/js/2.41762125.chunk.js": "/tech-store/static/js/2.41762125.chunk.js",
+    "static/js/2.41762125.chunk.js.map": "/tech-store/static/js/2.41762125.chunk.js.map",
     "index.html": "/tech-store/index.html",
-    "precache-manifest.a3093830aae4d938dd1d8629293ea114.js": "/tech-store/precache-manifest.a3093830aae4d938dd1d8629293ea114.js",
+    "precache-manifest.6c2a6d9b19b14f633de91391e6f81627.js": "/tech-store/precache-manifest.6c2a6d9b19b14f633de91391e6f81627.js",
     "service-worker.js": "/tech-store/service-worker.js",
     "static/css/2.1e66eaca.chunk.css.map": "/tech-store/static/css/2.1e66eaca.chunk.css.map",
-    "static/css/main.f9a381da.chunk.css.map": "/tech-store/static/css/main.f9a381da.chunk.css.map",
+    "static/css/main.f94eec75.chunk.css.map": "/tech-store/static/css/main.f94eec75.chunk.css.map",
     "static/media/aboutBcg.jpeg": "/tech-store/static/media/aboutBcg.7709c10e.jpeg",
     "static/media/contactBcg.jpeg": "/tech-store/static/media/contactBcg.945afb99.jpeg",
     "static/media/defaultBcg.jpeg": "/tech-store/static/media/defaultBcg.0819a816.jpeg",
     "static/media/logo.svg": "/tech-store/static/media/logo.2b362308.svg",
     "static/media/mainBcg.jpeg": "/tech-store/static/media/mainBcg.984874d1.jpeg",
     "static/media/productsBcg.jpeg": "/tech-store/static/media/productsBcg.160fddff.jpeg",
-    "static/media/singleProductBcg.jpeg": "/tech-store/static/media/singleProductBcg.96758412.jpeg"
+    "static/media/singleProductBcg.jpeg": "/tech-store/static/media/singleProductBcg.96758412.jpeg",
+    "static/media/storeBcg.jpeg": "/tech-store/static/media/storeBcg.46143c2f.jpeg"
   }
 }
