@@ -22,6 +22,10 @@
   color: var(--primaryColor);
 }
 
+.cart-icon {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Open Sans', sans-serif !important;
   background: var(--mainGrey) !important;
