@@ -205,7 +205,7 @@ class ProductProvider extends Component {
   removeItem = (id) => {
     let tempCart = [...this.state.cart];
 
-    tempCart = tempCart.filter(item => item.id != id);
+    tempCart = tempCart.filter(item => item.id !== id);
 
     this.setState({
       cart: [...tempCart]
