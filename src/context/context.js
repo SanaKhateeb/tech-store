@@ -200,8 +200,17 @@ class ProductProvider extends Component {
     })
   }
 
-  clearCart = (id) => {
-    console.log("Cart has been cleared")
+  clearCart = () => {
+    this.setState({
+      cart: [],
+      cartItems: 0,
+      cartSubTotal: 0,
+      cartTax: 0,
+      cartTotal: 0,
+    }, () => {
+      this.syncStorage();
+    })
+
   }
 
 
