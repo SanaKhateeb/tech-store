@@ -66,6 +66,7 @@ class ProductProvider extends Component {
     return cart;
   }
 
+  /* Calculates whole cart subtotal, tax, and grand total */
   getTotals = () => {
     let subTotal = 0;
     let cartItems = 0;
@@ -164,9 +165,22 @@ class ProductProvider extends Component {
     })
   }
 
-  // Cart Page functions
+  /* Cart Page Functions */
   increment = (id) => {
-    console.log(id);
+    let tempCart = [...this.state.cart];
+    const cartItem = tempCart.find(item => item.id === id);
+    console.log(cartItem);
+
+    cartItem.count++;
+    cartItem.itemTotal = cartItem.count * cartItem.price;
+    cartItem.itemTotal = parseFloat(cartItem.itemTotal.toFixed(2));
+
+    this.setState({
+      cart: [...tempCart]
+    }, () => {
+      this.addTotals();
+      this.syncStorage();
+    });
   }
 
   decrement = (id) => {
