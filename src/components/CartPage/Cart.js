@@ -6,11 +6,14 @@ import CartTotals from './CartTotals'
 
 export default function Cart() {
   return (
-    <div>
-      <Title title="Cart" center />
+    <section className="py-5">
+      <div className="container">
+        <Title title="Your Cart" center />
+      </div>
+
       <CartColumns />
       <CartList />
       <CartTotals />
-    </div>
+    </section>
   )
 }
