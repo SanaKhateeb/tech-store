@@ -169,7 +169,6 @@ class ProductProvider extends Component {
   increment = (id) => {
     let tempCart = [...this.state.cart];
     const cartItem = tempCart.find(item => item.id === id);
-    console.log(cartItem);
 
     cartItem.count++;
     cartItem.itemTotal = cartItem.count * cartItem.price;
@@ -184,7 +183,23 @@ class ProductProvider extends Component {
   }
 
   decrement = (id) => {
-    console.log(id);
+    let tempCart = [...this.state.cart];
+    const cartItem = tempCart.find(item => item.id === id);
+
+    cartItem.count--;
+    if(cartItem.count === 0) {
+      this.removeItem(id);
+    } else {
+      cartItem.itemTotal = cartItem.count * cartItem.price;
+      cartItem.itemTotal = parseFloat(cartItem.itemTotal.toFixed(2));
+
+      this.setState({
+        cart: [...tempCart]
+      }, () => {
+        this.addTotals();
+        this.syncStorage();
+      })
+    }
   }
 
   removeItem = (id) => {
